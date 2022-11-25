@@ -35,7 +35,8 @@ function Car.new( options )
 	self._controller = Controller.new
 	{
 		heading = math.rad( self.rotation0 or 0 ),
-		position = { x = self.x0, y = self.y0 }
+		position = { x = self.x0, y = self.y0 },
+		brakeActsAsReverse = true
 	}
 
 	local scale = 7
